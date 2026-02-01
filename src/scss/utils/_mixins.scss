@@ -1,0 +1,34 @@
+@use '../base/variables' as v;
+
+@mixin home-button-top {
+    height: 187px;
+    width: 100%;
+    max-width: 302px;
+}
+
+@mixin home-button-bottom {
+    height: 217px;
+    width: 100%;
+    max-width: 460px;
+}
+
+@mixin dashboard-button {
+    font-size: v.$button-font-size;
+    box-sizing: border-box;
+    padding: 24px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    backdrop-filter: blur(37px);
+}
+
+@mixin menu-button-bg($main-color) {
+    background: $main-color, 
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.157) 0%, rgba(255, 255, 255, 0.157) 100%) padding-box, // white
+    radial-gradient(circle at top right, rgb(69, 17, 119) 0%, rgb(22, 3, 79) 100%) padding-box, // bg
+    radial-gradient(circle at 35% 80%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) border-box; // border;
+
+}

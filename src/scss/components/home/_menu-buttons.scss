@@ -1,0 +1,80 @@
+@use '../../base/variables' as v;
+@use '../../utils/mixins' as m;
+
+.menu-buttons {
+    margin-top: 50px;
+
+    >.buttons-container {
+        width: 950px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 19px;
+
+        >.home-button {
+            @include m.dashboard-button;
+            box-shadow: v.$home-buton-shadow;
+
+            >.img {
+                width: 190px;
+                position: absolute;
+                top: -30%;
+                right: -15%;
+            }
+
+            >.text-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        >.-requests {
+            @include m.home-button-top;
+            @include m.menu-button-bg(radial-gradient(circle at top right, rgb(54, 125, 47) 0%, rgb(38 124 29 / 63%) 35%, rgba(24, 86, 50, 0.6) 55%, rgba(18, 61, 66, 0.26) 85%, rgba(22, 10, 72, 0.4) 100%) padding-box);
+        }
+
+        >.-hcs {
+            @include m.home-button-top;
+            @include m.menu-button-bg(radial-gradient(circle at top right, rgba(141, 50, 120, 1) 11%, rgb(101 42 71 / 79%) 42%, rgba(60, 46, 46, 0.65) 68%, rgba(48, 42, 47, 0.61) 85%, rgba(39, 26, 36, 0.73) 100%) padding-box);
+
+            >.img {
+                width: 175px;
+                top: -20%;
+                right: -6%;
+            }
+        }
+
+        >.-status {
+            @include m.menu-button-bg(radial-gradient(circle at top right, rgb(179, 107, 49) 0%, rgb(140 84 39 / 65%) 36%, rgb(80 44 15 / 49%) 66%, rgba(48, 42, 47, 0.61) 85%, rgb(39 26 29 / 80%) 100%) padding-box);
+
+            >.img {
+                width: 165px;
+                top: -20%;
+                right: -6%;
+            }
+        }
+
+        >.-b2b {
+            @include m.menu-button-bg(radial-gradient(circle at top right, rgb(42, 54, 170) 0%, rgb(42 54 170 / 65%) 36%, rgb(28 36 111 / 37%) 66%, rgb(39 29 93 / 74%) 85%, rgba(39, 26, 36, 0.73) 100%) padding-box);
+            @include m.home-button-bottom;
+
+            >.img {
+                width: 276px;
+                right: -9%;
+            }
+        }
+
+        >.-analytics {
+            @include m.menu-button-bg(radial-gradient(circle at top right, rgb(68, 149, 140) 0%, rgba(43, 103, 111, 0.83) 36%, rgba(38, 74, 81, 0.69) 66%, rgb(41 51 66 / 81%) 85%, rgb(19 47 48) 100%) padding-box);
+            @include m.home-button-bottom;
+
+            >.img {
+                width: 246px;
+                top: -30%;
+                right: -8%;
+            }
+        }
+
+    }
+
+}

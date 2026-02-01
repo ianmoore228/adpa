@@ -1,0 +1,91 @@
+@use '../../base/variables' as v;
+@use '../../utils/mixins' as m;
+
+.requests-buttons {
+    display: flex;
+    max-width: 1030px;
+    gap: 20px;
+
+    >.buttons-container {
+        >.requests-button {
+            @include m.dashboard-button;
+            box-shadow: v.$home-buton-shadow;
+
+            @include m.menu-button-bg(radial-gradient(circle at top right, rgb(72 173 63) 0%, rgb(38 124 29 / 63%) 35%, rgba(24, 86, 50, 0.6) 55%, rgba(18, 61, 66, 0.26) 85%, rgba(22, 10, 72, 0.4) 100%) padding-box);
+
+            >.icon {
+                position: absolute;
+                top: -18%;
+                right: -15%;
+                width: 200px;
+            }
+
+            >.text {
+                text-align: left;
+            }
+        }
+
+        >.-emergency {
+            box-shadow: inset -1px -3px 11px -2px rgba(255, 255, 255, 0.27),
+                inset 14px 5px 58px -6px #db1ced45,
+                inset 14px 5px 58px -6px #332572,
+                4px 12px 48px -12px rgba(0, 0, 0, 0.45),
+                0 2px 12px -8px rgba(0, 0, 0, 0.41),
+                inset 0px -2px 5px 0 rgba(255, 255, 255, 0.15);
+            width: 302px;
+            height: 445px;
+
+            >.icon {
+                top: -8%;
+                width: 311px;
+
+            }
+        }
+
+        >.-dispatcher {
+            width: 300px;
+            @include m.menu-button-bg(radial-gradient(circle at top right, rgb(72, 173, 63) 0%, rgba(38, 124, 29, 0.63) 35%, rgb(62 86 24 / 60%) 55%, rgb(31 68 26 / 58%) 85%, rgba(22, 10, 72, 0.4) 100%) padding-box);
+        }
+
+        >.-rating {
+            width: 385px;
+            @include m.menu-button-bg(radial-gradient(circle at top right, rgb(72, 173, 63) 0%, rgba(38, 124, 29, 0.63) 35%, rgb(62 86 24 / 60%) 55%, rgb(31 68 26 / 58%) 85%, rgba(22, 10, 72, 0.4) 100%) padding-box);
+
+
+            >.icon {
+                top: -20%;
+                right: -11%;
+
+            }
+
+        }
+
+        >.-routing {
+            width: 385px;
+
+            >.icon {
+                top: -20%;
+                right: -10%;
+
+            }
+
+        }
+
+        >.-feedback {
+            width: 300px;
+
+            >.icon {
+                top: -10%;
+            }
+        }
+
+
+    }
+
+    >.-right {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

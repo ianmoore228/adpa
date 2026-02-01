@@ -1,0 +1,1 @@
+export {B2bPage} from "./B2bPage.tsx"

@@ -1,0 +1,40 @@
+.sidemenu-content {
+    display: flex;
+    margin-left: -35px;
+
+    >.sidemenu-bg {
+        width: 154px;
+        height: 884px;
+    }
+    
+    >.sidemenu-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      margin-left: -94px;
+      margin-top: 217px;
+
+
+      >.sidemenu-button {
+
+        width: 35px;
+        height: 35px;
+
+        position: relative;
+ 
+        >.button-icon {
+            pointer-events: none;
+            width: 134px;
+            position: absolute;
+            top: calc(-100% - 14px);
+            left: calc(-100% - 14px);
+        }
+    }
+
+    }
+
+   
+
+}
+
