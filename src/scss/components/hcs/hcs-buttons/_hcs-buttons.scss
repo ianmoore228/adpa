@@ -1,0 +1,38 @@
+@use '@/scss/base/variables' as v;
+@use '@/scss/utils/mixins' as m;
+
+.hcs-buttons {
+    display: flex;
+    max-width: 1060px;
+    gap: 20px;
+
+    >.hcs-button {
+        width: 340px;
+        height: 223px;
+        @include m.dashboard-button;
+        box-shadow: v.$home-buton-shadow;
+
+        @include m.menu-button-bg(radial-gradient(circle at top right, rgba(141, 50, 120, 1) 11%, rgb(101 42 71 / 79%) 42%, rgba(60, 46, 46, 0.65) 68%, rgba(48, 42, 47, 0.61) 85%, rgba(39, 26, 36, 0.73) 100%) padding-box);
+
+        >.text-container {
+            text-align: left;
+        }
+
+        >.icon {
+            position: absolute;
+            top: -30%;
+            right: -17%;
+            width: 235px;
+        }
+
+        >.text {
+            text-align: left;
+        }
+    }
+
+
+    >.-epassport {
+        @include m.menu-button-bg(radial-gradient(circle at top right, rgb(141, 50, 120) 11%, rgb(90 42 101 / 79%) 42%, rgb(53, 31, 97) 68%, rgba(49, 30, 95, 0.66) 85%, rgb(82, 52, 149) 100%) padding-box);
+
+    }
+}

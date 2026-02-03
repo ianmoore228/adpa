@@ -1,5 +1,5 @@
-@use '../../base/variables' as v;
-@use '../../utils/mixins' as m;
+@use '@/scss/base/variables' as v;
+@use '@/scss/utils/mixins' as m;
 
 .requests-buttons {
     display: flex;
@@ -12,6 +12,10 @@
             box-shadow: v.$home-buton-shadow;
 
             @include m.menu-button-bg(radial-gradient(circle at top right, rgb(72 173 63) 0%, rgb(38 124 29 / 63%) 35%, rgba(24, 86, 50, 0.6) 55%, rgba(18, 61, 66, 0.26) 85%, rgba(22, 10, 72, 0.4) 100%) padding-box);
+
+            >.text-container {
+                text-align: left;
+            }
 
             >.icon {
                 position: absolute;

@@ -45,6 +45,7 @@
         }
 
         >.-status {
+            width: 303px;
             @include m.menu-button-bg(radial-gradient(circle at top right, rgb(179, 107, 49) 0%, rgb(140 84 39 / 65%) 36%, rgb(80 44 15 / 49%) 66%, rgba(48, 42, 47, 0.61) 85%, rgb(39 26 29 / 80%) 100%) padding-box);
 
             >.img {

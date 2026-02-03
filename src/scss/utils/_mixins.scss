@@ -9,7 +9,7 @@
 @mixin home-button-bottom {
     height: 217px;
     width: 100%;
-    max-width: 460px;
+    max-width: 463px;
 }
 
 @mixin dashboard-button {
@@ -30,5 +30,4 @@
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.157) 0%, rgba(255, 255, 255, 0.157) 100%) padding-box, // white
     radial-gradient(circle at top right, rgb(69, 17, 119) 0%, rgb(22, 3, 79) 100%) padding-box, // bg
     radial-gradient(circle at 35% 80%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) border-box; // border;
-
 }

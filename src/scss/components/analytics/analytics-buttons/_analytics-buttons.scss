@@ -1,0 +1,37 @@
+@use '@/scss/base/variables' as v;
+@use '@/scss/utils/mixins' as m;
+
+.analytics-buttons {
+    display: flex;
+    max-width: 1060px;
+    gap: 20px;
+
+    >.analytics-button {
+        width: 340px;
+        height: 260px;
+        @include m.dashboard-button;
+        box-shadow: v.$home-buton-shadow;
+        @include m.menu-button-bg(radial-gradient(circle at top right, rgb(68, 149, 140) 0%, rgb(39 88 88 / 83%) 36%, rgb(50 54 77 / 69%) 66%, rgb(49 41 63 / 81%) 85%, rgb(19, 47, 48) 100%) padding-box);
+
+        >.text-container {
+            text-align: left;
+        }
+
+        >.icon {
+            position: absolute;
+            top: -15%;
+            right: -10%;
+            width: 200px;
+        }
+
+        >.text {
+            text-align: left;
+        }
+
+    }
+
+    >.-monitoring {
+        @include m.menu-button-bg(radial-gradient(circle at top right, rgb(68, 149, 140) 0%, rgba(43, 103, 111, 0.83) 36%, rgb(45 58 86 / 69%) 66%, rgb(72 46 93 / 81%) 85%, rgb(99 59 124) 100%) padding-box);
+    }
+  
+}

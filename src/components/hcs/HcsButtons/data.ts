@@ -5,15 +5,15 @@ import interactionIcon from "images/HcsButtons/interaction-icon.png"
 export const data = [
     {
         id: 1,
-        class: "hcs-button -devices",
-        img: devicesIcon,
+        class: "hcs-button -epassport",
+        img: epassportIcon,
         textTop: "Электронный",
         textBottom: "паспорт дома"
     },
     {
         id: 2,
-        class: "hcs-button -epassport",
-        img: epassportIcon,
+        class: "hcs-button -devices",
+        img: devicesIcon,
         textTop: "",
         textBottom: "Приборы учёта"
     },
