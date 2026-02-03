@@ -1,5 +1,9 @@
+import { DashboardName } from "@/shared/components/DashboardName"
+
 export const B2bPage = () => {
     return (
-        <div className="b2b-page"></div>
+        <>
+        <DashboardName/>
+        </>
     )
 }

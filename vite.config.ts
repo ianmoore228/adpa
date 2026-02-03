@@ -10,5 +10,9 @@ export default defineConfig({
       "images": path.resolve(__dirname, "src", "assets", "images"),
     },
   },
+  server: {
+    host: "0.0.0.0",
+    port: 5173,
+  },
   plugins: [react(), tsconfigPaths()],
 });

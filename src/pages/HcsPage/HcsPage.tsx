@@ -1,5 +1,11 @@
+import { DashboardName } from "@/shared/components/DashboardName"
+import { HcsButtons } from "@/components/hcs/HcsButtons"
+
 export const HcsPage = () => {
     return (
-        <div className="hcs-page"></div>
+        <>
+        <DashboardName/>
+        <HcsButtons/>
+        </>
     )
 }

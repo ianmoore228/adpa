@@ -1,5 +1,9 @@
+import { DashboardName } from "@/shared/components/DashboardName"
+
 export const StatusPage = () => {
     return (
-        <div className="status-page"></div>
+        <>
+        <DashboardName/>
+        </>
     )
 }

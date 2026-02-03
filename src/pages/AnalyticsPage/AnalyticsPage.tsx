@@ -1,5 +1,9 @@
+import { DashboardName } from "@/shared/components/DashboardName"
+
 export const AnalyticsPage = () => {
     return (
-        <div className="analytics-page"></div>
+        <>
+        <DashboardName/>
+        </>
     )
 }
