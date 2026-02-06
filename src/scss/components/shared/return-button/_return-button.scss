@@ -1,0 +1,14 @@
+@use '@/scss/base/variables' as v;
+@use '@/scss/utils/mixins' as m;
+
+.return-button {
+    box-shadow: v.$home-buton-shadow;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    gap: 43px;
+    @include m.menu-button-bg(radial-gradient(circle at top right, rgb(72, 173, 63) 0%, rgba(38, 124, 29, 0.63) 35%, rgb(79 95 80 / 60%) 55%, rgb(153 64 171 / 58%) 85%, rgb(215 49 255) 100%) padding-box);
+}

@@ -1,5 +1,6 @@
 import emergencyIcon from "images/RequestsButtons/emergency-icon.png";
 import { data } from "./data";
+import { NavLink } from "react-router";
 
 export const RequestsButtons = () => {
   return (
@@ -13,13 +14,13 @@ export const RequestsButtons = () => {
       <div className="buttons-container -right">
         {data.map((item) => {
           return (
-            <button key={item.id} className={item.class}>
+            <NavLink to={item.path} key={item.id} className={item.class}>
               <img src={item.img} className="icon" />
               <div className="text-container">
                 <p className="text">{item.textTop}</p>
                 <p className="text">{item.textBottom}</p>
               </div>
-            </button>
+            </NavLink>
           );
         })}
       </div>

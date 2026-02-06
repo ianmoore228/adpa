@@ -3,10 +3,13 @@
 @use 'components/home/dashboard-greeting';
 @use 'components/home/menu-buttons';
 @use 'pages/home-page/home-page';
-@use 'components/side-menu/side-menu';
-@use 'components/dashboard-name/dashboard-name';
+@use 'components/shared/side-menu/side-menu';
+@use 'components/shared/dashboard-name/dashboard-name';
 @use 'components/requests/requests-buttons/requests-buttons';
 @use 'components/hcs/hcs-buttons/hcs-buttons';
 @use 'components/status/status-buttons/status-buttons';
 @use 'components/b2b/b2b-buttons/b2b-buttons';
-@use 'components/analytics/analytics-buttons/analytics-buttons'
+@use 'components/analytics/analytics-buttons/analytics-buttons';
+@use 'components/requests/dispatcher/dispatcher-table/dispatcher-table';
+@use 'components/shared/return-button/return-button';
+@use 'components/requests/dispatcher/request/request';

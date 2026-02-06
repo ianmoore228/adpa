@@ -1,25 +1,37 @@
-
 @font-face {
     font-family: "Gilroy";
-    src: url("/fonts/Gilroy-UltraLight.ttf") format("truetype");
+    src: url("../../assets/fonts/GILROY-ULTRALIGHT.TTF") format("truetype");
     font-weight: 200;
     font-style: normal;
   }
   
   @font-face {
     font-family: "Gilroy";
-    src: url("/fonts/Gilroy-Light.otf") format("opentype");
+    src: url("../../assets/fonts/GILROY-LIGHT.OTF") format("opentype");
     font-weight: 300;
     font-style: normal;
   }
   
   @font-face {
     font-family: "Gilroy";
-    src: url("/fonts/Gilroy-ExtraBold.otf") format("opentype");
+    src: url("../../assets/fonts/GILROY-EXTRABOLD.OTF") format("opentype");
     font-weight: 900;
     font-style: normal;
   }
 
+  @font-face {
+    font-family: "PT Sans";
+    src: url("../../assets/fonts/PTSANS-BOLD.TTF") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+  }
 
+  @font-face {
+    font-family: "PT Sans";
+    src: url("../../assets/fonts/PTSANS-REGULAR.TTF") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
 
 $font-text: 'Gilroy';
+$font-table: 'PT Sans';

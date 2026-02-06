@@ -6,8 +6,6 @@ import { NavLink } from "react-router";
 export const SideMenu = () => {
   const [isActive, setIsActive] = useState(false);
 
-  console.log(isActive);
-
   return (
     <nav className="sidemenu-content">
       <img src={menuBg} className="sidemenu-bg" />
@@ -19,7 +17,7 @@ export const SideMenu = () => {
               to={`/${item.path}`}
               key={item.id}
               className={!isActive ? item.class : item.classActive}
-              onClick={() =>{ setIsActive(!isActive); console.log(item.id)}}
+              onClick={() =>{ setIsActive(!isActive)}}
             >
               <img className={item.imgClass} src={item.img} />
             </NavLink>

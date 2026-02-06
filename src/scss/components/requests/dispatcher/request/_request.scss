@@ -1,0 +1,44 @@
+.request-wrapper {
+
+    >.title {
+        margin-bottom: 30px;
+    }
+
+    >.request-container {
+        max-width: 1283px;
+        display: flex;
+        flex-wrap: wrap;
+
+        >.info-container {
+            width: 650px;
+            background-color: aqua;
+            border-radius: 16px;
+        }
+
+        >.-common {
+            height: 275px;
+        }
+
+        >.-employees {
+            width: 610px;
+            height: 404px;
+            margin-left: 20px;
+        }
+
+        >.-date {
+            height: 380px;
+            margin-top: -109px;
+        }
+
+        >.-budget {
+            width: 610px;
+            height: 490px;
+            margin: 20px 0 0 20px;
+        }
+
+        >.-photos {
+            height: 220px;
+            margin-top: -220px;
+        }
+    }
+}

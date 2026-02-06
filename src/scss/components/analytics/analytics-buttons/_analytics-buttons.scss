@@ -11,7 +11,7 @@
         height: 260px;
         @include m.dashboard-button;
         box-shadow: v.$home-buton-shadow;
-        @include m.menu-button-bg(radial-gradient(circle at top right, rgb(68, 149, 140) 0%, rgb(39 88 88 / 83%) 36%, rgb(50 54 77 / 69%) 66%, rgb(49 41 63 / 81%) 85%, rgb(19, 47, 48) 100%) padding-box);
+        @include m.menu-button-bg(radial-gradient(circle at top right, rgb(71 191 177) 0%, rgba(39, 88, 88, 0.83) 36%, rgba(50, 54, 77, 0.69) 66%, rgba(49, 41, 63, 0.81) 85%, rgb(19, 47, 48) 100%) padding-box);
 
         >.text-container {
             text-align: left;

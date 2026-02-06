@@ -1,0 +1,57 @@
+@use '@/scss/base/variables' as v;
+@use '@/scss/base/fonts' as f;
+@use '@/scss/utils/mixins' as m;
+
+.dispatchertable-container {
+    padding: 32px 70px 42px 70px;
+    font-family: f.$font-table;
+    box-shadow: inset -1px -3px 11px -2px rgba(255, 255, 255, 0.27),
+    inset 14px 5px 58px -6px #9133a8c4,
+    4px 12px 48px -12px rgba(0, 0, 0, 0.45),
+    0 2px 12px -8px rgba(0, 0, 0, 0.41),
+    inset 0px -2px 5px 0 rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 31px;
+    border: 1px solid transparent;
+    background: 
+    radial-gradient(circle at top right, rgba(42, 55, 170, 0.056) 0%, rgba(42, 55, 170, 0.033) 36%, rgba(28, 36, 111, 0.084) 66%, rgba(43, 29, 93, 0.096) 85%, rgb(167 42 186 / 52%) 100%) padding-box,
+    radial-gradient(circle at top left, rgba(42, 55, 170, 0.056) 0%, rgba(42, 55, 170, 0.033) 36%, rgba(28, 36, 111, 0.084) 66%, rgba(43, 29, 93, 0.096) 85%, rgb(167 42 186 / 52%) 100%) padding-box,
+    radial-gradient(circle at top right, rgb(36 18 95) 0%, rgb(22, 3, 79) 100%) padding-box, // bg
+    radial-gradient(circle at 35% 80%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)) border-box; // border;
+
+    >.filter-button {
+        font-size: 20px;
+        box-shadow: v.$home-buton-shadow;
+        @include m.menu-button-bg(radial-gradient(circle at top right, rgba(42, 55, 170, 0.056) 0%, rgba(42, 55, 170, 0.033) 36%, rgba(28, 36, 111, 0.084) 66%, rgba(43, 29, 93, 0.096) 85%, rgb(167 42 186 / 52%) 100%) padding-box);
+        padding: 8px 20px 8px 13px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    >.dispatcher-table {
+        border-collapse: collapse;
+
+        .header {
+            font-weight: 600;
+        }
+
+        .-cell {
+            font-size: 20px;
+            padding: 22px 33px;
+            border: 0.5px solid rgba(255, 255, 255, 0.615);
+        }
+
+        .-link {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+    }
+
+}
