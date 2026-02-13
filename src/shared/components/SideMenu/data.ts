@@ -21,7 +21,7 @@ export const data = [
     img: homeIcon,
     imgActive: homeIconActive,
     imgClass: "button-icon",
-    path: "",
+    path: "/",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const data = [
     img: requestsIcon,
     imgActive: requestsIconActive,
     imgClass: "button-icon",
-    path: "requests",
+    path: "/requests",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const data = [
     img: hcsIcon,
     imgActive: hcsIconActive,
     imgClass: "button-icon",
-    path: "hcs",
+    path: "/hcs",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ export const data = [
     img: statusIcon,
     imgActive: statusIconActive,
     imgClass: "button-icon",
-    path: "status",
+    path: "/status",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const data = [
     img: b2bIcon,
     imgActive: b2bIconActive,
     imgClass: "button-icon",
-    path: "b2b",
+    path: "/b2b",
   },
   {
     id: 6,
@@ -66,6 +66,6 @@ export const data = [
     img: analyticsIcon,
     imgActive: analyticsIconActive,
     imgClass: "button-icon",
-    path: "analytics",
+    path: "/analytics",
   },
 ];

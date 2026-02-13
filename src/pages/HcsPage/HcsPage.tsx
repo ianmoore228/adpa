@@ -3,9 +3,9 @@ import { HcsButtons } from "@/components/hcs/HcsButtons"
 
 export const HcsPage = () => {
     return (
-        <>
+        <div className="hcs-page">
         <DashboardName/>
         <HcsButtons/>
-        </>
+        </div>
     )
 }

@@ -1,13 +1,16 @@
 
-
-.sidemenu-container {
-  position: absolute;
-  left: 0;
-  top: 50px;
-}
-
 .menu-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    // margin: 0 23px 68px 23px;
+}
+
+@media screen and (max-width: 1120px) {
+    .menu-container {
+        width: 100%;
+        // max-width: 450px;
+        // min-width: 347px;
+    }
+    
 }

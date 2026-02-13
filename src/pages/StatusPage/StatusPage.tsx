@@ -3,9 +3,9 @@ import { StatusButtons } from "@/components/status/StatusButtons"
 
 export const StatusPage = () => {
     return (
-        <>
+        <div className="status-page">
         <DashboardName/>
         <StatusButtons/>
-        </>
+        </div>
     )
 }

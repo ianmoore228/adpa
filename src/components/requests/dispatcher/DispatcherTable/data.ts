@@ -23,11 +23,11 @@ export const dataHeaders = [
 
 interface DataRowsProps {
   id: number;
+  path: string;
   cells: {
     cellId: number;
     text: string;
     class: string;
-    path: string;
     //Показываем что это - массив!
   }[];
 }
@@ -36,211 +36,187 @@ interface DataRowsProps {
 export const dataRows: DataRowsProps[] = [
   {
     id: 1,
+    path: "/requests/dispatcher/request",
     cells: [
       {
         cellId: 1,
         text: "№ 148 от 20.09.2025",
         class: "cell -cell",
-        path: "/requests/dispatcher/request",
       },
       {
         cellId: 2,
         text: "Электронная почта",
         class: "cell -cell",
-        path: "/requests/dispatcher/request",
       },
       {
         cellId: 3,
         text: "Платная",
         class: "cell -cell",
-        path: "/requests/dispatcher/request",
       },
       {
         cellId: 4,
         text: "Смирнов Р. К.",
-        class: "cell -cell",
-        path: "/requests/dispatcher/request",
+        class: "cell -cell -name",
       },
       {
         cellId: 5,
         text: "https:/carshari...",
         class: "cell -cell -link",
-        path: "/requests/dispatcher/request",
       },
     ],
   },
   {
     id: 2,
+    path: "",
     cells: [
       {
         cellId: 1,
         text: "№ 156 от 17.10.2025",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 2,
         text: "Сайт",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 3,
         text: "Платная",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 4,
         text: "Карпов С. А.",
-        class: "cell -cell",
-        path: "",
+        class: "cell -cell -name",
       },
       {
         cellId: 5,
         text: "https:/carshari...",
         class: "cell -cell -link",
-        path: "",
       },
     ],
   },
   {
     id: 3,
+    path: "",
     cells: [
       {
         cellId: 1,
         text: "№ 161 от 23.10.2025",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 2,
         text: "Телефон",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 3,
         text: "Аварийная",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 4,
         text: "Серов К. Ю.",
-        class: "cell -cell",
-        path: "",
+        class: "cell -cell -name",
       },
       {
         cellId: 5,
         text: "https:/carshari...",
         class: "cell -cell -link",
-        path: "",
       },
     ],
   },
   {
     id: 4,
+    path: "",
     cells: [
       {
         cellId: 1,
         text: "№ 161 от 23.10.2025",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 2,
         text: "Телефон",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 3,
         text: "Аварийная",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 4,
         text: "Серов К. Ю.",
-        class: "cell -cell",
-        path: "",
+        class: "cell -cell -name",
       },
       {
         cellId: 5,
         text: "https:/carshari...",
         class: "cell -cell -link",
-        path: "",
       },
     ],
   },
   {
     id: 5,
+    path: "",
     cells: [
       {
         cellId: 1,
         text: "№ 174 от 08.11.2025",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 2,
         text: "Личное обращение",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 3,
         text: "Гарантия",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 4,
         text: "Яналов С. В.",
-        class: "cell -cell",
-        path: "",
+        class: "cell -cell -name",
       },
       {
         cellId: 5,
         text: "https:/carshari...",
         class: "cell -cell -link",
-        path: "",
       },
     ],
   },
   {
     id: 6,
+    path: "",
     cells: [
       {
         cellId: 1,
         text: "№ 179 от 14.11.2025",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 2,
         text: "Мессенджер MAX",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 3,
         text: "Платная",
         class: "cell -cell",
-        path: "",
       },
       {
         cellId: 4,
         text: "Смирнов Р. К.",
-        class: "cell -cell",
-        path: "",
+        class: "cell -cell -name",
       },
       {
         cellId: 5,
         text: "https:/carshari...",
         class: "cell -cell -link",
-        path: "",
       },
     ],
   },

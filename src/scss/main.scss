@@ -2,7 +2,6 @@
 
 @use 'components/home/dashboard-greeting';
 @use 'components/home/menu-buttons';
-@use 'pages/home-page/home-page';
 @use 'components/shared/side-menu/side-menu';
 @use 'components/shared/dashboard-name/dashboard-name';
 @use 'components/requests/requests-buttons/requests-buttons';
@@ -13,3 +12,12 @@
 @use 'components/requests/dispatcher/dispatcher-table/dispatcher-table';
 @use 'components/shared/return-button/return-button';
 @use 'components/requests/dispatcher/request/request';
+
+@use 'pages/requests-page/requests-page';
+@use 'pages/dispatcher-page/dispatcher-page';
+@use 'pages/home-page/home-page';
+@use 'pages/hcs-page/hcs-page';
+@use 'pages/status-page/status-page';
+@use 'pages/b2b-page/b2b-page';
+@use 'pages/analytics-page/analytics-page';
+@use 'pages/request-page/request-page';

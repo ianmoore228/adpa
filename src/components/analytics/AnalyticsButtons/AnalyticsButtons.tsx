@@ -1,17 +1,16 @@
-import {data} from "./data";
+import { data } from "./data";
+import { MenuButton } from "@/shared/components/MenuButton";
 
 export const AnalyticsButtons = () => {
   return (
     <div className="analytics-buttons">
       {data.map((item) => {
         return (
-          <button key={item.id} className={item.class}>
-            <img src={item.img} className="icon" />
-            <div className="text-container">
-              <p className="text">{item.textTop}</p>
-              <p className="text">{item.textBottom}</p>
-            </div>
-          </button>
+          <MenuButton
+            shadowColor="rgba(93, 255, 255,"
+            key={item.id}
+            item={item}
+          />
         );
       })}
     </div>

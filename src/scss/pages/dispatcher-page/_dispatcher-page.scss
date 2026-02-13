@@ -1,0 +1,29 @@
+.dispatcher-page {
+    width: 100%;
+}
+
+@media screen and (max-width: 1256px) {
+    .dispatcher-page {
+        padding: 10% 0;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+
+    .dispatcher-page {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 27px;
+        padding: 0;
+
+        >.return-button {
+           margin-left: 23px;
+        }
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .dispatcher-page {
+        padding: 0 0 60% 0;
+    }
+}

@@ -26,6 +26,9 @@ a {
     background-image: url(../../assets/images/bg.png);
     background-size: cover;
     color: white;
+    overflow-x: hidden;
+    // overflow: hidden;
+
   }
 
   button {
@@ -40,4 +43,34 @@ a {
     margin-top: 10vh;
     display: flex;
     justify-content: center;
+  }
+  
+  textarea {
+    resize: none;
+  }
+
+  @media screen and (max-width: 1250px) {
+   body {
+    height: 100%;
+    // padding-bottom: 20%;
+   background-size: 230%;
+   }
+  }
+
+
+  @media  screen and (max-width: 970px) {
+
+    body {
+        height: 100%;
+        // padding-bottom: 20%;
+        background-size: cover;
+        // padding-bottom: 68px;
+        }
+    }
+
+    
+  @media  screen and (max-width: 510px) {
+    body {
+      background-size: 1000%;
+    }
   }

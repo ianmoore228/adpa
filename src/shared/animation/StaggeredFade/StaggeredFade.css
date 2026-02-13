@@ -1,0 +1,22 @@
+.StaggeredFade-title {
+    font-size: 1.25rem;        /* text-xl */
+    text-align: center;        /* text-center */
+    font-weight: bold;         /* font-bold */
+    letter-spacing: -0.03em;   /* tracking-tighter */
+  }
+  
+  /* sm:text-4xl */
+  @media (min-width: 640px) {
+    .StaggeredFade-title {
+      font-size: 2.25rem;
+    }
+  }
+  
+  /* md:text-6xl + md:leading-[4rem] */
+  @media (min-width: 768px) {
+    .StaggeredFade-title {
+      font-size: 3.75rem;
+      line-height: 4rem;
+    }
+  }
+  

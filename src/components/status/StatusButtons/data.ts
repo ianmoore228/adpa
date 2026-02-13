@@ -7,21 +7,30 @@ export const data = [
         id: 1,
         class: "status-button -management",
         img: managementIcon,
-        textTop: "Управление",
-        textBottom: "сменами"
+        textFirst: "Управление",
+        textSecond: "сменами",
+        initial: { y: -60, opacity: 0 },
+        animate: { y: 0, opacity: 1 },
+        delay: 0,
     },
     {
         id: 2,
         class: "status-button -kpi",
         img: kpiIcon,
-        textTop: "",
-        textBottom: "KPI сотрудников"
+        textFirst: "",
+        textSecond: "KPI сотрудников",
+        initial: { y: -60, opacity: 0 },
+        animate: { y: 0, opacity: 1 },
+        delay: 0.2,
     },
     {
         id: 3,
         class: "status-button -workplace",
         img: workplaceIcon,
-        textTop: "Мобильное",
-        textBottom: "рабочее место"
+        textFirst: "Мобильное",
+        textSecond: "рабочее место",
+        initial: { y: -60, opacity: 0 },
+        animate: { y: 0, opacity: 1 },
+        delay: 0.4,
     }
 ]

@@ -7,21 +7,30 @@ export const data = [
         id: 1,
         class: "hcs-button -epassport",
         img: epassportIcon,
-        textTop: "Электронный",
-        textBottom: "паспорт дома"
+        textFirst: "Электронный",
+        textSecond: "паспорт дома",
+        initial: { y: -60, opacity: 0 },
+        animate: { y: 0, opacity: 1 },
+        delay: 0,
     },
     {
         id: 2,
         class: "hcs-button -devices",
         img: devicesIcon,
-        textTop: "",
-        textBottom: "Приборы учёта"
+        textFirst: "",
+        textSecond: "Приборы учёта",
+        initial: { y: -60, opacity: 0 },
+        animate: { y: 0, opacity: 1 },
+        delay: 0.2,
     },
     {
         id: 3,
         class: "hcs-button -interaction",
         img: interactionIcon,
-        textTop: "Взаимодействие",
-        textBottom: "с ГИС ЖКХ"
+        textFirst: "Взаимодействие",
+        textSecond: "с ГИС ЖКХ",
+        initial: { y: -60, opacity: 0 },
+        animate: { y: 0, opacity: 1 },
+        delay: 0.4,
     }
 ]

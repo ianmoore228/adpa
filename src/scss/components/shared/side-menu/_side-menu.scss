@@ -1,40 +1,177 @@
-.sidemenu-content {
-    display: flex;
-    margin-left: -35px;
+@use '@/scss/base/variables' as v;
+@use '@/scss/utils/mixins' as m;
 
-    >.sidemenu-bg {
-        width: 154px;
-        height: 884px;
-    }
-    
-    >.sidemenu-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
+.sidemenu-container {
+    position: absolute;
+    left: -2px;
+    top: 50px;
+    width: 82px;
+    z-index: 2;
 
-      margin-left: -94px;
-      margin-top: 217px;
+    >.sidemenu-content {
 
+        display: flex;
+        margin-left: -35px;
 
-      >.sidemenu-button {
-
-        width: 35px;
-        height: 35px;
-
-        position: relative;
- 
-        >.button-icon {
-            pointer-events: none;
-            width: 134px;
-            position: absolute;
-            top: calc(-100% - 14px);
-            left: calc(-100% - 14px);
+        >.sidemenu-bg {
+            width: 154px;
+            height: 884px;
         }
-    }
+
+        >.sidemenu-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            margin-left: -94px;
+            margin-top: 217px;
+
+
+            >.sidemenu-button {
+
+                width: 35px;
+                height: 35px;
+
+                position: relative;
+
+                >.button-icon {
+                    pointer-events: none;
+                    width: 134px;
+                    position: absolute;
+                    top: calc(-100% - 14px);
+                    left: calc(-100% - 14px);
+                }
+            }
+
+        }
+
 
     }
 
-   
 
 }
 
+
+.hamburger-wrapper {
+    position: fixed; 
+    top: 0px; 
+    right: 55px; 
+    z-index: 9999;
+}
+
+
+.hamburger-container {
+    // position: absolute;
+    // right: -165px;
+    // top: 0px;
+    position: fixed;
+
+    z-index: 1000;
+
+    .visuallyHidden {
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+    }
+
+    .h1 {
+        text-align: center;
+    }
+
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 30px;
+        height: 30px;
+        position: relative;
+    }
+
+    .hamburger .bar {
+        padding: 0;
+        width: 35px;
+        height: 6px;
+        border: 1px solid rgba(192, 155, 195, 0.297);
+        background-color: rgba(255, 255, 255, 0.181);
+        display: block;
+        border-radius: 4px;
+        transition: all 0.4s ease-in-out;
+        position: absolute;
+    }
+
+    .bar1 {
+        top: 0;
+    }
+
+    .hamburger .bar2,
+    .hamburger .bar3 {
+        top: 12px;
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+
+    .bar3 {
+        right: -4px;
+    }
+
+    .bar4 {
+        bottom: 0;
+    }
+
+    /* HAMBURGER 1 */
+    .checkbox1:checked+label>.hamburger1>.bar1 {
+        transform: rotate(45deg);
+        transform-origin: 5%;
+        width: 41px
+    }
+
+    .checkbox1:checked+label>.hamburger1>.bar2 {
+        transform: translateX(-40px);
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .checkbox1:checked+label>.hamburger1>.bar3 {
+        transform: translateX(40px);
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .checkbox1:checked+label>.hamburger1>.bar4 {
+        transform-origin: 5%;
+        transform: rotate(-45deg);
+        width: 41px;
+        bottom: -2px;
+    }
+
+}
+
+@media screen and (max-width: 1450px) {
+    .sidemenu-container {
+        right: -82px;
+        left: unset;
+        top: -36px;
+        position: fixed; 
+      
+
+        >.sidemenu-content {
+
+            >.sidemenu-bg {
+                height: calc(100vh + 100px);
+            }
+        }
+    }
+
+}

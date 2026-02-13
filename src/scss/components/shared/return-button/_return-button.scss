@@ -12,3 +12,20 @@
     gap: 43px;
     @include m.menu-button-bg(radial-gradient(circle at top right, rgb(72, 173, 63) 0%, rgba(38, 124, 29, 0.63) 35%, rgb(79 95 80 / 60%) 55%, rgb(153 64 171 / 58%) 85%, rgb(215 49 255) 100%) padding-box);
 }
+
+
+@media screen and (max-width: 1120px) {
+    .return-button {
+        font-size: 20px;
+        padding: 7px 13px 7px 16px;
+        gap: 15px;
+        border-radius: 14px;
+        // margin: 0 0 0 23px;
+        width: min-content;
+
+        >.icon {
+            width: 10px;
+            height: 16px;
+        }
+    }
+}
