@@ -24,13 +24,26 @@ export const MenuButtons = () => {
               className={item.class}
             >
               <motion.img className="img" src={item.img} />
-              <div className="text-container">
-                <p className="text">{item.textFirst}</p>=
+              <motion.div
+                initial={{ y: -60, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 0.7,
+                  type: "spring",
+                  delay: 0.3 * index,
+                }}
+                className="text-container"
+              >
+                <p className="text">{item.textFirst}</p>
                 <p className="text">{item.textSecond}</p>
-              </div>
+              </motion.div>
             </motion.a>
           ) : (
-            <MenuButton key={item.id} item={item} shadowColor={item.shadowColor} />
+            <MenuButton
+              key={item.id}
+              item={item}
+              shadowColor={item.shadowColor}
+            />
           )
         )}
       </div>

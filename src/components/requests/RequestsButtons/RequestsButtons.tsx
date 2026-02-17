@@ -15,7 +15,7 @@ export const RequestsButtons = () => {
             <MenuButton
               item={{
                 id: "emergency",
-                path: "#",
+                path: "",
                 img: emergencyIcon,
                 textFirst: "Аварийно-диспетчерская",
                 textSecond: "служба",
@@ -54,7 +54,7 @@ export const RequestsButtons = () => {
             </motion.button>
           </div>
           <div className="buttons-container -right">
-            {data.map((item) => {
+            {data.map((item, index) => {
               return (
                 <motion.a
                   initial={{ y: -60, opacity: 0 }}
@@ -69,10 +69,19 @@ export const RequestsButtons = () => {
                   className={item.class}
                 >
                   <img src={item.img} className="img" />
-                  <div className="text-container">
+                  <motion.div
+                    initial={{ y: -60, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{
+                      duration: 0.7,
+                      type: "spring",
+                      delay: 0.3 * index,
+                    }}
+                    className="text-container"
+                  >
                     <p className="text">{item.textFirst}</p>
                     <p className="text">{item.textSecond}</p>
-                  </div>
+                  </motion.div>
                 </motion.a>
               );
             })}

@@ -8,6 +8,11 @@
     gap: 20px;
 
     >.buttons-container {
+
+          >.requests-button:not(.-dispatcher) {
+             user-select: none;   
+          }
+
         >.requests-button {
             @include m.dashboard-button;
             box-shadow: v.$home-buton-shadow;

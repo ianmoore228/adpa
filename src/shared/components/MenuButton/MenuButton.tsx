@@ -1,6 +1,16 @@
-import { motion, useMotionValue, useSpring, useMotionTemplate } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useSpring,
+  useMotionTemplate,
+} from "framer-motion";
 
-export const MenuButton = ({ item, shadowColor = "rgba(178, 77, 255,", shadowBlur = 19, thirdText = false }) => {
+export const MenuButton = ({
+  item,
+  shadowColor = "rgba(178, 77, 255,",
+  shadowBlur = 19,
+  thirdText = false,
+}) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -19,7 +29,10 @@ export const MenuButton = ({ item, shadowColor = "rgba(178, 77, 255,", shadowBlu
 
   const springShadowX = useSpring(shadowX, { stiffness: 80, damping: 20 });
   const springShadowY = useSpring(shadowY, { stiffness: 80, damping: 20 });
-  const springShadowOpacity = useSpring(shadowOpacity, { stiffness: 80, damping: 20 });
+  const springShadowOpacity = useSpring(shadowOpacity, {
+    stiffness: 80,
+    damping: 20,
+  });
 
   const boxShadow = useMotionTemplate`
     ${springShadowX}px 
@@ -59,9 +72,17 @@ export const MenuButton = ({ item, shadowColor = "rgba(178, 77, 255,", shadowBlu
     shadowOpacity.set(0);
   };
 
+  const handleClick = (e) => {
+    const cls = item.class; 
+    if (cls.includes("-routing") || cls.includes("-rating") || cls.includes("-feedback") || cls.includes("-emergency")) {
+      e.preventDefault();
+    }
+  };
+
   return (
     <motion.a
-      whileTap={{ scale: 0.9 }}
+      onClick={handleClick}
+      // whileTap={{ scale: 0.9 }}
       initial={item.initial}
       animate={item.animate}
       transition={{
@@ -87,11 +108,20 @@ export const MenuButton = ({ item, shadowColor = "rgba(178, 77, 255,", shadowBlu
         style={{ x: springX, y: springY }}
       />
 
-      <div className="text-container">
+      <motion.div
+        initial={{ y: -60, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          type: "spring",
+          delay: 0.3 * item.delay,
+        }}
+        className="text-container"
+      >
         <p className="text">{item.textFirst}</p>
         <p className="text">{item.textSecond}</p>
         {thirdText && <p className="text">{item.textThird}</p>}
-      </div>
+      </motion.div>
     </motion.a>
   );
 };
